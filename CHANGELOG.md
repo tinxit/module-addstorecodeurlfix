@@ -24,6 +24,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Updated for Magento 2.4.4 PHP 8.1 
 - Created a changelog.md
+- 
+## [v1.0.4] - unreleased
 
+## [v1.0.5] - 17-11-2022
+### fix
+- fix for magento 2.4.5
 
+## [v1.0.6] - 31-05-2024
+## Added
+- Updated for Magento 2.4.7 PHP 8.3
+- Use Magento coding standard
 

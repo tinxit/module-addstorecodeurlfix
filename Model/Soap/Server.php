@@ -1,21 +1,10 @@
 <?php
-/*
- *
- * Tinx-IT.
- *
- * NOTICE OF LICENSE
- *
- *  This source file is subject to the EULA
- *   that is bundled with this package in the file LICENSE.txt.
- *
- * @category   TinxIT
- * @package    TinxIT_OverrideWebapi
- * @author     Extension Team
- * @copyright  Copyright (c) 2021 Tinx-IT. ( http://www.tinx-it.com )
- *
- */
+
+declare(strict_types=1);
 
 namespace TinxIT\OverrideWebapi\Model\Soap;
+
+use Magento\Framework\Exception\NoSuchEntityException;
 
 /**
  * SOAP Server
@@ -28,8 +17,9 @@ class Server extends \Magento\Webapi\Model\Soap\Server
      * Generate URI of SOAP endpoint.
      *
      * @return string
+     * @throws NoSuchEntityException
      */
-    public function getEndpointUri()
+    public function getEndpointUri(): string
     {
         $storeCode = $this->_storeManager->getStore()->getCode() === \Magento\Store\Model\Store::ADMIN_CODE
             ? \Magento\Webapi\Controller\PathProcessor::ALL_STORE_CODE

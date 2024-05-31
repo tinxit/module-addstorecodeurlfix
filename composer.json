@@ -1,11 +1,11 @@
 {
-  "name": "tinxit/addstorecodeurlfix",
+  "name": "tinxit/module-addstorecodeurlfix",
   "description": "Override admin in API endpoint when using storecode urls",
   "require": {
-    "php": "~7.0.0|~7.1.0|~7.2.0|~7.3.0|~7.4.0|~8.1.0"
+    "php": "~7.4.0|~8.1.0|8.2.0|8.3.0"
   },
   "type": "magento2-module",
-    "version": "1.0.5",
+    "version": "1.0.6",
    "license": [
     "OSL-3.0",
     "AFL-3.0"
@@ -13,7 +13,7 @@
   "authors": [
     {
       "name": "Rene Donkers",
-      "email": "info@tinx-it.com"
+      "email": "rdonkers@tinx-it.com"
     }
   ],
   "autoload": {
